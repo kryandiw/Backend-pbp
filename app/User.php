@@ -15,9 +15,13 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $table = 'users';
+    protected $primarykey = 'id';
+    public $timestamps = true;
     protected $fillable = [
-        'name', 'email', 'password',
-    ];
+                            'nama', 
+                            'email', 
+                            'password'];
 
     /**
      * The attributes that should be hidden for arrays.
